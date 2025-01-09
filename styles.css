@@ -98,7 +98,7 @@ h1, p {
 }
 /* 背景樣式 */
 #music {
-  background-image: url('music-background.jpg'); /* 替換為你的背景圖片 */
+  background-image: url(/D11370934/33/01/15.png); /* 替換為你的背景圖片 */
   background-size: cover;
   background-position: center;
   min-height: 100vh;
