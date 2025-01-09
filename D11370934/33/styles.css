@@ -1,0 +1,133 @@
+/* 通用樣式 */
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: medium;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.9); /* 半透明背景 */
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #912828; /* 文字顏色 */
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #FF69B4; /* 活躍頁面顏色 */
+}
+
+/* 背景圖樣式 */
+.bg-section {
+  min-height: 100vh;
+  background-image: url(/D11370934/33/01/hall.jpeg); /* 每頁單獨背景圖 */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 100px 20px; /* 增加內邊距，避免內容被壓縮 */
+}
+
+.bg-section .container {
+  position: relative;
+  z-index: 2;
+  margin-top: 10px; /* 增加頂部空間 */
+}
+
+.bg-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 182, 193, 0.5); /* 粉色透明覆蓋 */
+  z-index: 1;
+}
+
+/* 卡片樣式 */
+.card {
+  background-color: rgba(255, 255, 255, 0.85); /* 半透明背景 */
+  padding: 100px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  max-width: 800px; /* 增加卡片寬度 */
+  margin: auto; /* 居中對齊 */
+}
+
+/* Carousel 調整 */
+.carousel-item img {
+  object-fit:contain;
+  max-height: 600px; /* 限制幻燈片高度 */
+  width: 100%;
+}
+
+/* 額外調整 */
+h1, p {
+  margin-bottom: auto; /* 增加標題和段落之間的距離 */
+  color: #631b1b;
+}
+
+.container .btn {
+  margin: 10px; /* 增加按鈕間距 */
+}
+
+/* 首頁背景樣式 */
+#home {
+  height: 100vh; /* 全頁高度 */
+  background-image: url(/D11370934/33/01/15.png); /* 替換為你的背景圖片路徑 */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 163, 177, 0.5); /* 粉色透明覆蓋 */
+  z-index: 1;
+}
+
+#home .container {
+  position: relative;
+  z-index: 2; /* 確保內容在背景覆蓋層之上 */
+}
+/* 背景樣式 */
+#music {
+  background-image: url('music-background.jpg'); /* 替換為你的背景圖片 */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+  padding: 100px 20px;
+}
+
+#music::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 182, 193, 0.5); /* 粉色透明覆蓋 */
+  z-index: 1;
+}
+
+#music .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* 標題樣式 */
+.text-pink {
+  color: #FF69B4;
+}
+
+/* 嵌入音樂框樣式 */
+iframe {
+  border: none;
+}
